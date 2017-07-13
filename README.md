@@ -1,6 +1,12 @@
 # sparklyr_test
 Testing sparklyr for data wrangling &amp; basic modelling
 
+## COntents
+
+- [sparklyr_test](https://github.com/aurora-mareviv/sparklyr_test/blob/master/sparklyr_test.ipynb): a Jupyter notebook for interactive data exploration & modelling.
+
+- [sparklyr_script](): a .R script for 
+
 ## References 
 
 - [`sparklyr` tutorial](http://spark.rstudio.com/)
