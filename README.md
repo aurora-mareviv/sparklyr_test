@@ -7,9 +7,9 @@ Testing the `sparklyr` package for data wrangling &amp; basic modelling
 [`sparklyr_test`](https://github.com/aurora-mareviv/sparklyr_test/blob/master/sparklyr_test.ipynb) is a Jupyter notebook for interactive data exploration & modelling.
 
 ### R script
-[`sparklyr_script`]() is a `.R` script that launches as an application.
+[`sparklyr_script`](https://github.com/aurora-mareviv/sparklyr_test/blob/master/sparklyr_script.R) is a `.R` script that launches as an application.
 
-    $ spark-submit --master yarn --deploy-mode cluster sparklyr_script.R
+    $ spark-submit --deploy-mode cluster sparklyr_script.R
 
 
 ## References 
