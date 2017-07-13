@@ -1,3 +1,5 @@
+.libPaths(c(file.path(Sys.getenv('SPARK_HOME'), 'R', 'lib'), .libPaths()))
+
 x <- c("sparklyr", "dplyr", "knitr", "ggplot2", "repr")
 lapply(x, require, character.only = TRUE)
 
