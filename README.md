@@ -3,7 +3,7 @@ Testing the `sparklyr` package for data wrangling &amp; basic modelling
 
 ## Contents
 
-### Jupyter Notebook
+### Jupyter Notebooks
 [`sparklyr_test`](https://github.com/aurora-mareviv/sparklyr_test/blob/master/sparklyr_test.ipynb) is a Jupyter notebook for interactive data exploration & modelling.
 
 [`sparklyr_test2`](https://github.com/aurora-mareviv/sparklyr_test/blob/master/sparklyr_test2.ipynb) is another Jupyter notebook for interactive data exploration & modelling with a -much- bigger dataset.
