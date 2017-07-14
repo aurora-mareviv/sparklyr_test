@@ -12,7 +12,7 @@ Testing the `sparklyr` package for data wrangling &amp; basic modelling
 ### R script
 [`sparklyr_script`](https://github.com/aurora-mareviv/sparklyr_test/blob/master/sparklyr_script.R) is a `.R` script that launches as an application.
 
-    $ spark-submit --deploy-mode cluster sparklyr_script.R
+    $ spark-submit --deploy-mode client sparklyr_script.R
 
 
 ## References 
