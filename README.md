@@ -1,5 +1,5 @@
 # sparklyr_test
-Testing the `sparklyr` package for data wrangling &amp; basic modelling
+Testing the `sparklyr` package for data wrangling &amp; basic modelling.
 
 ## Contents
 
@@ -22,3 +22,7 @@ Testing the `sparklyr` package for data wrangling &amp; basic modelling
 - [`sparklyr`: creating extensions](http://spark.rstudio.com/extensions.html).
 - [Differences between `sparkr` and `sparklyr`](https://stackoverflow.com/questions/39494484/sparkr-vs-sparklyr).
 - [Hive Operators and UDFs](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+UDF).
+
+## Clone this repo
+
+    $ git clone https://github.com/aurora-mareviv/sparklyr_test
