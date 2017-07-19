@@ -15,6 +15,11 @@ Testing the `sparklyr` package for data wrangling &amp; basic modelling.
     $ spark-submit --deploy-mode client sparklyr_script.R
 
 
+### Clone this repo
+
+    $ git clone https://github.com/aurora-mareviv/sparklyr_test
+    
+
 ## References 
 
 - [`sparklyr` tutorial](http://spark.rstudio.com/).
@@ -23,6 +28,3 @@ Testing the `sparklyr` package for data wrangling &amp; basic modelling.
 - [Differences between `sparkr` and `sparklyr`](https://stackoverflow.com/questions/39494484/sparkr-vs-sparklyr).
 - [Hive Operators and UDFs](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+UDF).
 
-## Clone this repo
-
-    $ git clone https://github.com/aurora-mareviv/sparklyr_test
