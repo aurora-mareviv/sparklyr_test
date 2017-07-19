@@ -72,6 +72,8 @@ Temporary Items
 
 ####### Jupyter
 sparkr_test.ipynb
+sparklyr_test2_primary.ipynb
+
 MANIFEST
 build
 dist
@@ -111,7 +113,6 @@ venv
 
 ####### Spark
 derby.log
-
 
 
 
