@@ -4,13 +4,13 @@ Testing the `sparklyr` package for data wrangling &amp; basic modelling.
 ## Contents
 
 ### Jupyter Notebooks
-[`sparklyr_test`](https://github.com/aurora-mareviv/sparklyr_test/blob/master/sparklyr_test.ipynb) is a Jupyter notebook for interactive data exploration & modelling.
+[`sparklyr_test`](./sparklyr_test.ipynb) is a Jupyter notebook for interactive data exploration & modelling.
 
-<!--[`sparklyr_test2`](https://github.com/aurora-mareviv/sparklyr_test/blob/master/sparklyr_test2.ipynb) is another Jupyter notebook for interactive data exploration & modelling with a -much- bigger dataset. -->
+<!--[`sparklyr_test2`](./sparklyr_test2.ipynb) is another Jupyter notebook for interactive data exploration & modelling with a -much- bigger dataset. -->
 
 
 ### R script
-[`sparklyr_script`](https://github.com/aurora-mareviv/sparklyr_test/blob/master/sparklyr_script.R) is a `.R` script that launches as an application.
+[`sparklyr_script`](./sparklyr_script.R) is a `.R` script that launches as an application.
 
     $ spark-submit --deploy-mode client sparklyr_script.R
 
@@ -22,6 +22,7 @@ Testing the `sparklyr` package for data wrangling &amp; basic modelling.
 
 ## References 
 
+- [`sparklyr` presentation](https://cdn.oreillystatic.com/en/assets/1/event/193/Sparklyr_%20An%20R%20interface%20for%20Apache%20Spark%20Presentation.pdf)
 - [`sparklyr` tutorial](http://spark.rstudio.com/).
 - [`sparklyr` cheatsheet](http://spark.rstudio.com/images/sparklyr-cheatsheet.pdf).
 - [`sparklyr`: creating extensions](http://spark.rstudio.com/extensions.html).
