@@ -28,4 +28,7 @@ Testing the `sparklyr` package for data wrangling &amp; basic modelling.
 - [`sparklyr`: creating extensions](http://spark.rstudio.com/extensions.html).
 - [Differences between `sparkr` and `sparklyr`](https://stackoverflow.com/questions/39494484/sparkr-vs-sparklyr).
 - [Hive Operators and UDFs](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+UDF).
-
+- [Material for Machine Learning Workshop Galicia 2016](http://nbviewer.jupyter.org/github/javicacheiro/machine_learning_galicia_2016/blob/master/notebooks/sentiment_analysis-amazon_books.ipynb).
+- [PySpark Course](https://github.com/javicacheiro/pyspark_course).
+- [PySpark Programming Guide](https://spark.apache.org/docs/0.9.0/python-programming-guide.html).
+- [PySpark cheatsheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/PySpark_SQL_Cheat_Sheet_Python.pdf).
