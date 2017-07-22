@@ -28,6 +28,8 @@ Testing the `sparklyr` package for data wrangling &amp; basic modelling.
 - [`sparklyr`: creating extensions](http://spark.rstudio.com/extensions.html).
 - [Differences between `sparkr` and `sparklyr`](https://stackoverflow.com/questions/39494484/sparkr-vs-sparklyr).
 - [Hive Operators and UDFs](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+UDF).
+- [String Functions in Hive](http://www.folkstalk.com/2011/11/string-functions-in-hive.html).
+- [POSIX regular expressions](https://www.postgresql.org/docs/9.4/static/functions-matching.html#FUNCTIONS-POSIX-REGEXP).
 - [Material for Machine Learning Workshop Galicia 2016](http://nbviewer.jupyter.org/github/javicacheiro/machine_learning_galicia_2016/blob/master/notebooks/sentiment_analysis-amazon_books.ipynb).
 - [PySpark Course](https://github.com/javicacheiro/pyspark_course).
 - [PySpark Programming Guide](https://spark.apache.org/docs/0.9.0/python-programming-guide.html).
