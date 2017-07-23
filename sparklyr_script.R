@@ -1,6 +1,6 @@
 .libPaths(c(file.path(Sys.getenv('SPARK_HOME'), 'R', 'lib'), .libPaths()))
 
-x <- c("sparklyr", "dplyr", "knitr", "ggplot2", "repr")
+x <- c("sparklyr", "dplyr")
 lapply(x, require, character.only = TRUE)
 
 # overwrites the previous sc to give access to sparklyr methods
