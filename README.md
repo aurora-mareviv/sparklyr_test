@@ -19,7 +19,7 @@ Testing the `sparklyr` package for data wrangling &amp; basic modelling.
 
 ```sh
     git clone https://github.com/aurora-mareviv/sparklyr_test
-``` 
+    ``` 
 
 ## References 
 
