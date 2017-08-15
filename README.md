@@ -17,9 +17,8 @@ Testing the `sparklyr` package for data wrangling &amp; basic modelling.
 
 ### Clone this repo
 
-```sh
-    git clone https://github.com/aurora-mareviv/sparklyr_test
-    ``` 
+    $ git clone https://github.com/aurora-mareviv/sparklyr_test
+    
 
 ## References 
 
