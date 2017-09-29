@@ -114,5 +114,7 @@ venv
 ####### Spark
 derby.log
 
+####### Other
+/ignore/
 
 
