@@ -114,5 +114,9 @@ venv
 ####### Spark
 derby.log
 
+####### Repo .gitignore
+/ignore/
+*.Rmd
+index0.html
 
 
