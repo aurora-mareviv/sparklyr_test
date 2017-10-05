@@ -6,7 +6,7 @@ Testing the `sparklyr` package for data wrangling &amp; basic modelling.
 ### Jupyter Notebooks
 [`sparklyr_test`](./sparklyr_test.ipynb) is a Jupyter notebook for interactive data exploration & modelling.
 
-<!--[`sparklyr_test2`](./sparklyr_test2.ipynb) is another Jupyter notebook for interactive data exploration & modelling with a -much- bigger dataset. Visualize it in [nbviewer.jupyter.org](http://nbviewer.jupyter.org/github/aurora-mareviv/sparklyr_test/blob/master/sparklyr_test2.ipynb#Returning-to-sparklyr)-->
+[`sparklyr_test2`](./sparklyr_test2.ipynb) is another Jupyter notebook for interactive data exploration & modelling with a -much- bigger dataset. Visualize it in [nbviewer.jupyter.org](http://nbviewer.jupyter.org/github/aurora-mareviv/sparklyr_test/blob/master/sparklyr_test2.ipynb#Returning-to-sparklyr)
 
 
 ### R script
