@@ -1,6 +1,8 @@
 # sparklyr_test
 Testing the `sparklyr` package for data wrangling &amp; basic modelling.
 
+[https://aurora-mareviv.github.io/sparklyr_test](https://aurora-mareviv.github.io/sparklyr_test)
+
 ## Contents
 
 ### Jupyter Notebooks
