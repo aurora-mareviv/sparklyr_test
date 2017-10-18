@@ -11,6 +11,44 @@
   <link rel="stylesheet" href="index_files/reveal.js-3.3.0.1/css/reveal.css"/>
 
 
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; background-color: #303030; color: #cccccc; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; }
+td.sourceCode { padding-left: 5px; }
+pre, code { color: #cccccc; background-color: #303030; }
+code > span.kw { color: #f0dfaf; } /* Keyword */
+code > span.dt { color: #dfdfbf; } /* DataType */
+code > span.dv { color: #dcdccc; } /* DecVal */
+code > span.bn { color: #dca3a3; } /* BaseN */
+code > span.fl { color: #c0bed1; } /* Float */
+code > span.ch { color: #dca3a3; } /* Char */
+code > span.st { color: #cc9393; } /* String */
+code > span.co { color: #7f9f7f; } /* Comment */
+code > span.ot { color: #efef8f; } /* Other */
+code > span.al { color: #ffcfaf; } /* Alert */
+code > span.fu { color: #efef8f; } /* Function */
+code > span.er { color: #c3bf9f; } /* Error */
+code > span.wa { color: #7f9f7f; font-weight: bold; } /* Warning */
+code > span.cn { color: #dca3a3; font-weight: bold; } /* Constant */
+code > span.sc { color: #dca3a3; } /* SpecialChar */
+code > span.vs { color: #cc9393; } /* VerbatimString */
+code > span.ss { color: #cc9393; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { } /* Variable */
+code > span.cf { color: #f0dfaf; } /* ControlFlow */
+code > span.op { color: #f0efd0; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #ffcfaf; font-weight: bold; } /* Preprocessor */
+code > span.at { } /* Attribute */
+code > span.do { color: #7f9f7f; } /* Documentation */
+code > span.an { color: #7f9f7f; font-weight: bold; } /* Annotation */
+code > span.cv { color: #7f9f7f; font-weight: bold; } /* CommentVar */
+code > span.in { color: #7f9f7f; font-weight: bold; } /* Information */
+</style>
 
 <link rel="stylesheet" href="index_files/reveal.js-3.3.0.1/css/theme/league.css" id="theme">
 
@@ -457,15 +495,15 @@ document.getElementsByTagName('head')[0].appendChild(style);
 
 <section>
     <h1 class="title">Sparklyr: entorno para Big Data con R</h1>
-    <h3 class="date">18 octubre, 2017</h3>
+    <h3 class="date">18 Outubro, 2017</h3>
 </section>
 
 <section id="diapositivas-50" class="slide level2">
-<h2>Diapositivas  <span class="fa fa-cloud-download" style="color:white;"></span> 50%</h2>
+<h1>Diapositivas  <span class="fa fa-cloud-download" style="color:white;"></span> 50%</h1>
 <p><span class="h2-mod"><a href="https://aurora-mareviv.github.io/sparklyr_test">i.gal/mFA0F</a></span></p>
 </section>
 <section><section id="introduccion" class="titleslide slide level1"><h1>Introducción  <span class="fa fa-compass" style="color:white;"></span></h1></section><section id="que-es-sparklyr" class="slide level2">
-<h2>¿Qué es <a href="https://spark.rstudio.com/">sparklyr</a>?</h2>
+<h1>¿Qué es <a href="https://spark.rstudio.com/">sparklyr</a>?</h1>
 <ul>
 <li><p>Expone la API de Spark (en Scala) desde R.</p></li>
 <li><p>Spark permite acceder al ecosistema Hadoop.</p></li>
@@ -476,7 +514,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <p><img class="plain" style="width:185px;" src="./imaxes/dplyr.png"> <img class="plain" style="width:185px;" src="./imaxes/magrittr.png"> <img class="plain" style="width:185px;" src="./imaxes/sparklyr.png"></p>
 </div>
 </section><section id="que-es-big-data" class="slide level2">
-<h2>¿Qué es ‘<a href="https://wiki.apache.org/hadoop/">Big Data</a>’?</h2>
+<h1>¿Qué es ‘<a href="https://wiki.apache.org/hadoop/">Big Data</a>’?</h1>
 <ul>
 <li><p>Lectura y escritura de datos a gran escala, por:</p>
 <ul>
@@ -489,17 +527,17 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <p><img class="plain" style="width:500px;" src="./imaxes/hadoop.png"></p>
 </div>
 </section><section id="que-es-big-data-1" class="slide level2">
-<h2>¿Qué es ‘<a href="https://wiki.apache.org/hadoop/">Big Data</a>’?</h2>
+<h1>¿Qué es ‘<a href="https://wiki.apache.org/hadoop/">Big Data</a>’?</h1>
 <div class="img-center">
 <p><img class="plain" style="width:900px;" src="./imaxes/bigdata2a.png"></p>
 </div>
 </section><section id="big-data-y-sparklyr" class="slide level2">
-<h2>Big Data y Sparklyr</h2>
+<h1>Big Data y Sparklyr</h1>
 <div class="img-center">
 <p><img class="plain" style="width:600px;" src="./imaxes/sparklyrstack.png"></p>
 </div>
 </section><section id="como-se-procesa-hdfs" class="slide level2">
-<h2>¿Cómo se procesa?: <span style="color:#a7c2f1">HDFS</span></h2>
+<h1>¿Cómo se procesa?: <span style="color:#a7c2f1">HDFS</span></h1>
 <blockquote>
 <p>“hadoop distributed filesystem”</p>
 </blockquote>
@@ -517,12 +555,12 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <p>“lectura secuencial de archivos… pero, cómo?”</p>
 </blockquote>
 </section><section id="section" class="slide level2">
-<h2></h2>
+<h1></h1>
 <div class="img-center">
 <p><img  style="width:900px;" src="./imaxes/hdfs-demo.png"></p>
 </div>
 </section><section id="rdds" class="slide level2">
-<h2>RDD’s</h2>
+<h1>RDD’s</h1>
 <blockquote>
 <p>Resilient Distributed Database.</p>
 </blockquote>
@@ -536,7 +574,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <p><img class="plain" style="width:450px;" src="./imaxes/rdd2.png"></p>
 </div>
 </section><section id="arquitectura-hdfs" class="slide level2">
-<h2>Arquitectura HDFS</h2>
+<h1>Arquitectura HDFS</h1>
 <ul>
 <li><p>Bloques de 128 Mb.</p></li>
 <li><p>Se replican por defecto 3 veces en distintos nodos.</p></li>
@@ -546,7 +584,177 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </ul></li>
 </ul>
 </section></section>
-<section><section id="section-1" class="titleslide slide level1"><h1>&gt; …</h1></section></section>
+<section><section id="como-funciona-spark" class="titleslide slide level1"><h1>Cómo funciona Spark?  <span class="fa fa-magic" style="color:white;"></span></h1></section><section id="como-funciona-spark-1" class="slide level2">
+<h1>Cómo funciona Spark?</h1>
+<h3 id="compute-centric">Compute-centric</h3>
+<blockquote>
+<p>Los datos van a donde está el programa (MSExcel).</p>
+</blockquote>
+<h3 id="data-centric">Data-centric</h3>
+<blockquote>
+<p><span style="color:#ffbf80;"> El paradigma del Big Data: el programa va a donde se hallan los datos (Spark).</span></p>
+</blockquote>
+</section><section id="como-funciona-spark-2" class="slide level2">
+<h1>Cómo funciona Spark?</h1>
+<div class="img-center">
+<p><img class="plain" style="width:150px;" src="./imaxes/pc.png"> <img  style="width:700px;" src="./imaxes/spark-comp.png"></p>
+</div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Spark context: local (for &#39;low memory&#39; tasks only!)</span>
+sc &lt;-<span class="st"> </span><span class="kw">spark_connect</span>(<span class="dt">master =</span> <span class="st">&quot;local&quot;</span>, 
+                    <span class="dt">spark_home =</span> <span class="st">&quot;/usr/hdp/2.4.2.0-258/spark&quot;</span>)
+
+<span class="co"># Spark context: yarn (for loading bigger datasets)</span>
+sc &lt;-<span class="st"> </span><span class="kw">spark_connect</span>(<span class="dt">master =</span> <span class="st">&quot;yarn-client&quot;</span>, 
+                    <span class="dt">spark_home =</span> <span class="st">&quot;/usr/hdp/2.4.2.0-258/spark&quot;</span>)</code></pre></div>
+</section><section id="como-funciona-spark-3" class="slide level2">
+<h1>Cómo funciona Spark?</h1>
+<ul>
+<li><p>Driver: donde está instalado el programa que conecta con Spark.</p>
+<ul>
+<li><span style="color:#a7c2f1; font-family:monospace;"> $HOME</span>: Formato ‘glusterFS’ (paralelo, UNIX-like).</li>
+<li><span style="color:#ffbf80; font-family:monospace;"> $HOME</span>: Formato ‘HDFS’.</li>
+</ul></li>
+<li><p>Master: lanza las operaciones (local, client, cluster).</p></li>
+<li><p>YARN maneja los recursos que pide Spark.</p></li>
+<li><p>Los Executors realizan las operaciones con los archivos.</p></li>
+</ul>
+</section></section>
+<section><section id="operaciones-con-datos-en-spark" class="titleslide slide level1"><h1>Operaciones con datos en Spark  <span class="fa fa-cogs" style="color:white;"></span></h1></section><section id="map-reduce" class="slide level2" data-transition="fade-out">
+<h1>Map-Reduce</h1>
+<ul>
+<li><p>Concepto introducido por Google en <a href="https://research.google.com/archive/mapreduce.html">2004</a>.</p></li>
+<li><p>Puesto en práctica con Apache-Hadoop.</p></li>
+<li><p><span style="color:#a7c2f1">Map</span></p></li>
+<li><p><span style="color:#a7c2f1">Reduce</span></p></li>
+</ul>
+</section><section id="map-reduce-1" class="slide level2" data-transition="fade-in slide-out">
+<h1>Map-Reduce</h1>
+<ul>
+<li><p>Concepto introducido por Google en <a href="https://research.google.com/archive/mapreduce.html">2004</a>.</p></li>
+<li><p>Puesto en práctica con Apache-Hadoop.</p></li>
+<li><p><span style="color:#ffbf80; font-family:monospace;"> apply()</span></p></li>
+<li><p><span style="color:#ffbf80; font-family:monospace;"> summarise()</span></p></li>
+</ul>
+</section><section id="operaciones-mas-importantes" class="slide level2">
+<h1>Operaciones más importantes</h1>
+<ul>
+<li><p>Map – <span style="color:#ffbf80; font-family:monospace;"> apply()</span></p></li>
+<li><p>Filter – <span style="color:#ffbf80; font-family:monospace;"> filter() group_by()</span></p></li>
+<li><p>Reduce – <span style="color:#ffbf80; font-family:monospace;"> count() summarise()</span></p></li>
+<li><p>Collect – <span style="color:#ffbf80; font-family:monospace;"> collect()</span></p></li>
+</ul>
+<p><span style="color:#ffbf80; font-family:monospace;"> collect</span> desencadena la ejecución de todas las operaciones previas, y descarga los datos al <span style="color:#a7c2f1; font-family:monospace;"> $HOME</span> GlusterFS.</p>
+<blockquote>
+<p>Spark = ‘Lazy evaluation’.</p>
+</blockquote>
+</section><section id="ejemplos" class="slide level2">
+<h1>Ejemplos</h1>
+<p>Datos municipales</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">compostela %&gt;%
+<span class="st">  </span><span class="kw">filter</span>(superficie_servicios &gt;<span class="st"> </span>superficie_construida *<span class="st"> </span><span class="fl">0.5</span>) %&gt;%<span class="st"> </span>
+<span class="st">  </span>
+<span class="st">  </span><span class="kw">head</span>(<span class="dv">6</span>) %&gt;%<span class="st"> </span>
+<span class="st">  </span><span class="kw">collect</span>()</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">compostela %&gt;%
+<span class="st">  </span><span class="kw">group_by</span>(distrito, barrio) %&gt;%
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">max_num_habitantes   =</span> <span class="kw">max</span>(num_habitantes),
+            <span class="dt">media_num_parcelas  =</span> <span class="kw">mean</span>(num_parcelas),
+            <span class="dt">total_num_viviendas  =</span> <span class="kw">sum</span>(num_viviendas)) %&gt;%<span class="st"> </span>
+<span class="st">  </span>
+<span class="st">  </span><span class="kw">head</span>(<span class="dv">4</span>) %&gt;%<span class="st"> </span>
+<span class="st">  </span><span class="kw">collect</span>()</code></pre></div>
+</section><section id="ejemplos-1" class="slide level2">
+<h1>Ejemplos</h1>
+<p>Opiniones de libros en Amazon</p>
+<div class="img-center">
+<p><img  style="width:550px;" src="./imaxes/mapreduceRamazon.jpg"></p>
+</div>
+</section><section id="modelos-de-regresion-y-machine-learning" class="slide level2">
+<h1>Modelos de regresión y ‘machine-learning’</h1>
+<div class="img-center">
+<p><img  style="width:750px;" src="./imaxes/sparkstack.png"></p>
+</div>
+</section><section id="y-mucho-mas" class="slide level2">
+<h1>Y mucho más</h1>
+<ul>
+<li><p><span class="fa fa-github-alt" style="color:white;"></span> Github: <span style="color:#ffbf80"><a href="https://github.com/aurora-mareviv">github.com/aurora-mareviv</a></span></p></li>
+<li><p><span class="fa fa-code-fork" style="color:white;"></span> Tutorial sparklyr del CESGA: <a href="https://github.com/aurora-mareviv/sparklyr_test">/sparklyr_test</a></p></li>
+<li><p><span class="fa fa-globe" style="color:white;"></span> Web UI CESGA: <a href="http://hadoop.cesga.es/">hadoop.cesga.es</a></p></li>
+</ul>
+</section><section id="section-1" class="slide level2">
+<h1></h1>
+<h3 id="autores"><span class="alert alert-info" style="color:#fffff;font-family:monospace;">AUTORES</span></h3>
+<ul>
+<li><p>Aurora Baluja (<a href="https://xxisantiago.sergas.es/">CHUS</a>)</p>
+<ul>
+<li><span class="fa fa-github" style="color:white;"></span> <a href="https://github.com/aurora-mareviv"><code>@aurora-mareviv</code></a>   <span class="fa fa-twitter" style="color:white;"></span> <a href="https://twitter.com/maureviv"><code>@maureviv</code></a></li>
+</ul></li>
+<li><p>Javier López Cacheiro (<a href="www.cesga.es">CESGA</a>)</p>
+<ul>
+<li><span class="fa fa-github" style="color:white;"> </span> <span class="fa fa-twitter" style="color:white;"></span> <a href="https://github.com/javicacheiro"><code>@javicacheiro</code></a></li>
+</ul></li>
+</ul>
+<p><br></p>
+<h3 id="agradecimientos"><span class="alert alert-info" style="color:#fffff;font-family:monospace;">AGRADECIMIENTOS</span></h3>
+<ul>
+<li><p>Carlos Gil Bellosta (<a href="https://www.datanalytics.com/">datanalytics.com</a>) <span class="fa fa-twitter" style="color:white;"></span> <a href="https://twitter.com/gilbellosta"><code>@gilbellosta</code></a></p></li>
+<li><p>Comunidad de Usuarios de R de Galicia.</p></li>
+</ul>
+</section><section id="stickers" class="slide level2">
+<h1><span class="alert alert-info" style="color:#fffff;font-family:monospace;">Stickers!</span></h1>
+<div class="img-center">
+<p><img class="plain" style="width:400px;" src="./imaxes/hex-logo-sin-borde.png"></p>
+</div>
+</section></section>
+<section><section id="sparklyr-tutorial" class="titleslide slide level1"><h1>Sparklyr Tutorial  <span class="fa fa-book" style="color:white;"></span></h1></section><section id="sparklyr-tutorial-1" class="slide level2">
+<h1>Sparklyr tutorial</h1>
+<h3 id="jupyter-notebooks">Jupyter Notebooks</h3>
+<ul>
+<li><p><a href="./sparklyr_test.ipynb"><code>sparklyr_test</code></a></p>
+<ul>
+<li>Jupyter notebook for interactive data exploration &amp; modelling.</li>
+</ul></li>
+<li><p><a href="./sparklyr_test2.ipynb"><code>sparklyr_test2</code></a></p>
+<ul>
+<li><p>Another Jupyter notebook for interactive data exploration &amp; modelling with a -much- bigger dataset.</p></li>
+<li><p>Visualize it in <a href="http://nbviewer.jupyter.org/github/aurora-mareviv/sparklyr_test/blob/master/sparklyr_test2.ipynb#Returning-to-sparklyr">nbviewer.jupyter.org</a></p></li>
+</ul></li>
+</ul>
+</section><section id="sparklyr-tutorial-2" class="slide level2">
+<h1>Sparklyr tutorial</h1>
+<h3 id="r-script">R script</h3>
+<ul>
+<li><p><a href="./sparklyr_script.R"><code>sparklyr_script</code></a></p>
+<ul>
+<li>A <span style="color:#fffff;font-family:monospace;"> .R</span> script that launches as an application.</li>
+</ul></li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">spark-submit</span> --deploy-mode client sparklyr_script.R</code></pre></div>
+<p><br></p>
+<h3 id="clone-this-repo">Clone this repo</h3>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">git</span> clone https://github.com/aurora-mareviv/sparklyr_test</code></pre></div>
+</section><section id="references" class="slide level2">
+<h1>References</h1>
+<ul>
+<li><a href="https://cdn.oreillystatic.com/en/assets/1/event/193/Sparklyr_%20An%20R%20interface%20for%20Apache%20Spark%20Presentation.pdf"><code>sparklyr</code> presentation</a></li>
+<li><a href="http://spark.rstudio.com/"><code>sparklyr</code> tutorial</a>.</li>
+<li><a href="http://spark.rstudio.com/images/sparklyr-cheatsheet.pdf"><code>sparklyr</code> cheatsheet</a>.</li>
+<li><a href="http://spark.rstudio.com/extensions.html"><code>sparklyr</code>: creating extensions</a>.</li>
+<li><a href="https://stackoverflow.com/questions/39494484/sparkr-vs-sparklyr">Differences between <code>sparkr</code> and <code>sparklyr</code></a>.</li>
+<li><a href="https://cwiki.apache.org/confluence/display/Hive/LanguageManual+UDF">Hive Operators and UDFs</a>.</li>
+<li><a href="http://www.folkstalk.com/2011/11/string-functions-in-hive.html">String Functions in Hive</a>.</li>
+<li><a href="https://www.postgresql.org/docs/9.4/static/functions-matching.html#FUNCTIONS-POSIX-REGEXP">POSIX regular expressions</a>.</li>
+<li><a href="http://nbviewer.jupyter.org/github/javicacheiro/machine_learning_galicia_2016/blob/master/notebooks/sentiment_analysis-amazon_books.ipynb">Material for Machine Learning Workshop Galicia 2016</a>.</li>
+<li><a href="https://github.com/javicacheiro/pyspark_course">PySpark Course</a>.</li>
+<li><a href="https://spark.apache.org/docs/0.9.0/python-programming-guide.html">PySpark Programming Guide</a>.</li>
+<li><a href="https://s3.amazonaws.com/assets.datacamp.com/blog_assets/PySpark_SQL_Cheat_Sheet_Python.pdf">PySpark cheatsheet</a>.</li>
+</ul>
+<!--    
+<div class="img-center">
+  <img  style="width:800px;" src="./imaxes/dag2.png">
+</div>
+-->
+</section></section>
     </div>
   </div>
 
