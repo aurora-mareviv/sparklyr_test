@@ -4,51 +4,13 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="author" content="" />
-  <title>Sparklyr: R interface to Apache Spark</title>
+  <title>Sparklyr: entorno para Big Data con R</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
   <link rel="stylesheet" href="index_files/reveal.js-3.3.0.1/css/reveal.css"/>
 
 
-<style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; background-color: #303030; color: #cccccc; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; }
-td.sourceCode { padding-left: 5px; }
-pre, code { color: #cccccc; background-color: #303030; }
-code > span.kw { color: #f0dfaf; } /* Keyword */
-code > span.dt { color: #dfdfbf; } /* DataType */
-code > span.dv { color: #dcdccc; } /* DecVal */
-code > span.bn { color: #dca3a3; } /* BaseN */
-code > span.fl { color: #c0bed1; } /* Float */
-code > span.ch { color: #dca3a3; } /* Char */
-code > span.st { color: #cc9393; } /* String */
-code > span.co { color: #7f9f7f; } /* Comment */
-code > span.ot { color: #efef8f; } /* Other */
-code > span.al { color: #ffcfaf; } /* Alert */
-code > span.fu { color: #efef8f; } /* Function */
-code > span.er { color: #c3bf9f; } /* Error */
-code > span.wa { color: #7f9f7f; font-weight: bold; } /* Warning */
-code > span.cn { color: #dca3a3; font-weight: bold; } /* Constant */
-code > span.sc { color: #dca3a3; } /* SpecialChar */
-code > span.vs { color: #cc9393; } /* VerbatimString */
-code > span.ss { color: #cc9393; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { } /* Variable */
-code > span.cf { color: #f0dfaf; } /* ControlFlow */
-code > span.op { color: #f0efd0; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #ffcfaf; font-weight: bold; } /* Preprocessor */
-code > span.at { } /* Attribute */
-code > span.do { color: #7f9f7f; } /* Documentation */
-code > span.an { color: #7f9f7f; font-weight: bold; } /* Annotation */
-code > span.cv { color: #7f9f7f; font-weight: bold; } /* CommentVar */
-code > span.in { color: #7f9f7f; font-weight: bold; } /* Information */
-</style>
 
 <link rel="stylesheet" href="index_files/reveal.js-3.3.0.1/css/theme/league.css" id="theme">
 
@@ -482,7 +444,6 @@ style.innerHTML = style_script;
 document.getElementsByTagName('head')[0].appendChild(style);
 </script>
 
-    <link href="index_files/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 </head>
 <body>
 <!DOCTYPE html>
@@ -495,61 +456,97 @@ document.getElementsByTagName('head')[0].appendChild(style);
     <div class="slides">
 
 <section>
-    <h1 class="title">Sparklyr: R interface to Apache Spark</h1>
-    <h3 class="date">05 octubre, 2017</h3>
+    <h1 class="title">Sparklyr: entorno para Big Data con R</h1>
+    <h3 class="date">18 octubre, 2017</h3>
 </section>
 
-<section><section id="sparklyr-tutorial" class="titleslide slide level1"><h1>Sparklyr tutorial</h1></section><section id="sparklyr-tutorial-1" class="slide level2">
-<h2>Sparklyr tutorial</h2>
-<h3 id="jupyter-notebooks">Jupyter Notebooks</h3>
+<section id="diapositivas-50" class="slide level2">
+<h2>Diapositivas  <span class="fa fa-cloud-download" style="color:white;"></span> 50%</h2>
+<p><span class="h2-mod"><a href="https://aurora-mareviv.github.io/sparklyr_test">i.gal/mFA0F</a></span></p>
+</section>
+<section><section id="introduccion" class="titleslide slide level1"><h1>Introducción  <span class="fa fa-compass" style="color:white;"></span></h1></section><section id="que-es-sparklyr" class="slide level2">
+<h2>¿Qué es <a href="https://spark.rstudio.com/">sparklyr</a>?</h2>
 <ul>
-<li><p><a href="./sparklyr_test.ipynb"><code>sparklyr_test</code></a></p>
+<li><p>Expone la API de Spark (en Scala) desde R.</p></li>
+<li><p>Spark permite acceder al ecosistema Hadoop.</p></li>
+<li><p>Simplemente, sintaxis <span style="color:#fffff;font-family:monospace;"> dplyr</span>!.</p></li>
+<li><p>Creado por Rstudio en 2016.</p></li>
+</ul>
+<div class="img-center">
+<p><img class="plain" style="width:185px;" src="./imaxes/dplyr.png"> <img class="plain" style="width:185px;" src="./imaxes/magrittr.png"> <img class="plain" style="width:185px;" src="./imaxes/sparklyr.png"></p>
+</div>
+</section><section id="que-es-big-data" class="slide level2">
+<h2>¿Qué es ‘<a href="https://wiki.apache.org/hadoop/">Big Data</a>’?</h2>
 <ul>
-<li>Jupyter notebook for interactive data exploration &amp; modelling.</li>
+<li><p>Lectura y escritura de datos a gran escala, por:</p>
+<ul>
+<li>Volumen (Gb, Tb).</li>
+<li>Variedad / Complejidad.</li>
+<li>Velocidad (streaming).</li>
 </ul></li>
-<li><p><a href="./sparklyr_test2.ipynb"><code>sparklyr_test2</code></a></p>
+</ul>
+<div class="img-center">
+<p><img class="plain" style="width:500px;" src="./imaxes/hadoop.png"></p>
+</div>
+</section><section id="que-es-big-data-1" class="slide level2">
+<h2>¿Qué es ‘<a href="https://wiki.apache.org/hadoop/">Big Data</a>’?</h2>
+<div class="img-center">
+<p><img class="plain" style="width:900px;" src="./imaxes/bigdata2a.png"></p>
+</div>
+</section><section id="big-data-y-sparklyr" class="slide level2">
+<h2>Big Data y Sparklyr</h2>
+<div class="img-center">
+<p><img class="plain" style="width:600px;" src="./imaxes/sparklyrstack.png"></p>
+</div>
+</section><section id="como-se-procesa-hdfs" class="slide level2">
+<h2>¿Cómo se procesa?: <span style="color:#a7c2f1">HDFS</span></h2>
+<blockquote>
+<p>“hadoop distributed filesystem”</p>
+</blockquote>
 <ul>
-<li><p>Another Jupyter notebook for interactive data exploration &amp; modelling with a -much- bigger dataset.</p></li>
-<li><p>Visualize it in <a href="http://nbviewer.jupyter.org/github/aurora-mareviv/sparklyr_test/blob/master/sparklyr_test2.ipynb#Returning-to-sparklyr">nbviewer.jupyter.org</a></p></li>
+<li><p>Distinto a NTFS, FAT, Ext3…</p></li>
+<li><p>Optimizado para ficheros de &gt;100 Mb.</p></li>
+<li>Formato de <span style="color:#a7c2f1">r/w</span>, escrito en Java.
+<ul>
+<li>Escritura <em>en paralelo</em>.<br />
+</li>
+<li>Lectura <em>en paralelo</em> <strong>y</strong> <em>secuencial</em>.</li>
 </ul></li>
 </ul>
-</section><section id="sparklyr-tutorial-2" class="slide level2">
-<h2>Sparklyr tutorial</h2>
-<h3 id="r-script">R script</h3>
+<blockquote>
+<p>“lectura secuencial de archivos… pero, cómo?”</p>
+</blockquote>
+</section><section id="section" class="slide level2">
+<h2></h2>
+<div class="img-center">
+<p><img  style="width:900px;" src="./imaxes/hdfs-demo.png"></p>
+</div>
+</section><section id="rdds" class="slide level2">
+<h2>RDD’s</h2>
+<blockquote>
+<p>Resilient Distributed Database.</p>
+</blockquote>
 <ul>
-<li><p><a href="./sparklyr_script.R"><code>sparklyr_script</code></a></p>
+<li><p>Formato de archivo básico para HDFS.</p></li>
+<li><p>Compuesto de bloques, duplicados en varios nodos.</p></li>
+<li><p>Se recuperan en caso de pérdida de algún nodo.</p></li>
+<li><p>Base de los <em>dataframes</em> utilizados por <span style="color:#fffff;font-family:monospace;"> sparklyr</span>.</p></li>
+</ul>
+<div class="img-center">
+<p><img class="plain" style="width:450px;" src="./imaxes/rdd2.png"></p>
+</div>
+</section><section id="arquitectura-hdfs" class="slide level2">
+<h2>Arquitectura HDFS</h2>
 <ul>
-<li>A <span style="color:#fffff;font-family:monospace;"> .R</span> script that launches as an application.</li>
+<li><p>Bloques de 128 Mb.</p></li>
+<li><p>Se replican por defecto 3 veces en distintos nodos.</p></li>
+<li><p><span style="color:#a7c2f1">NameNode</span> es el árbol de directorios y metadatos:</p>
+<ul>
+<li>Indexa y mapea/localiza bloques y archivos.</li>
 </ul></li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">spark-submit</span> --deploy-mode client sparklyr_script.R</code></pre></div>
-<p><br></p>
-<h3 id="clone-this-repo">Clone this repo</h3>
-<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">git</span> clone https://github.com/aurora-mareviv/sparklyr_test</code></pre></div>
-</section><section id="references" class="slide level2">
-<h2>References</h2>
-<ul>
-<li><a href="https://cdn.oreillystatic.com/en/assets/1/event/193/Sparklyr_%20An%20R%20interface%20for%20Apache%20Spark%20Presentation.pdf"><code>sparklyr</code> presentation</a></li>
-<li><a href="http://spark.rstudio.com/"><code>sparklyr</code> tutorial</a>.</li>
-<li><a href="http://spark.rstudio.com/images/sparklyr-cheatsheet.pdf"><code>sparklyr</code> cheatsheet</a>.</li>
-<li><a href="http://spark.rstudio.com/extensions.html"><code>sparklyr</code>: creating extensions</a>.</li>
-<li><a href="https://stackoverflow.com/questions/39494484/sparkr-vs-sparklyr">Differences between <code>sparkr</code> and <code>sparklyr</code></a>.</li>
-<li><a href="https://cwiki.apache.org/confluence/display/Hive/LanguageManual+UDF">Hive Operators and UDFs</a>.</li>
-<li><a href="http://www.folkstalk.com/2011/11/string-functions-in-hive.html">String Functions in Hive</a>.</li>
-<li><a href="https://www.postgresql.org/docs/9.4/static/functions-matching.html#FUNCTIONS-POSIX-REGEXP">POSIX regular expressions</a>.</li>
-<li><a href="http://nbviewer.jupyter.org/github/javicacheiro/machine_learning_galicia_2016/blob/master/notebooks/sentiment_analysis-amazon_books.ipynb">Material for Machine Learning Workshop Galicia 2016</a>.</li>
-<li><a href="https://github.com/javicacheiro/pyspark_course">PySpark Course</a>.</li>
-<li><a href="https://spark.apache.org/docs/0.9.0/python-programming-guide.html">PySpark Programming Guide</a>.</li>
-<li><a href="https://s3.amazonaws.com/assets.datacamp.com/blog_assets/PySpark_SQL_Cheat_Sheet_Python.pdf">PySpark cheatsheet</a>.</li>
-</ul>
-</section><section id="coming-soon-to-r-users.gal" class="slide level2">
-<h2>Coming soon to <a href="https://www.r-users.gal/pagina/programa-2017">r-users.gal</a></h2>
-<ul>
-<li><p>Galician R Users Conference.</p></li>
-<li><p>19th October 2017 [11:30h]</p></li>
-</ul>
-<p><img class="plain" style="width:300px; margin:0 auto;" src="./imaxes/hex-logo-sin-borde.png"/></p>
 </section></section>
+<section><section id="section-1" class="titleslide slide level1"><h1>&gt; …</h1></section></section>
     </div>
   </div>
 
@@ -578,22 +575,9 @@ document.getElementsByTagName('head')[0].appendChild(style);
 
 
 
-        chalkboard: {
-          toggleNotesButton: false,
-          theme: 'whiteboard',
-        },
-
-        keyboard: {
-          67: function() { RevealChalkboard.toggleNotesCanvas() },    // toggle notes canvas when 'c' is pressed
-          66: function() { RevealChalkboard.toggleChalkboard() }, // toggle chalkboard when 'b' is pressed
-          46: function() { RevealChalkboard.clear() },    // clear chalkboard when 'DEL' is pressed
-           8: function() { RevealChalkboard.reset() },    // reset chalkboard data on current slide when 'BACKSPACE' is pressed
-          68: function() { RevealChalkboard.download() }, // downlad recorded chalkboard drawing when 'd' is pressed
-        },
-
         // Optional reveal.js plugins
         dependencies: [
-          { src: 'index_files/reveal.js-3.3.0.1/plugin/chalkboard/chalkboard.js', async: true },
+          { src: 'index_files/reveal.js-3.3.0.1/plugin/notes/notes.js', async: true },
         ]
       });
     </script>
@@ -602,7 +586,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
     (function () {
       var script = document.createElement("script");
       script.type = "text/javascript";
-      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      script.src  = "TRUE";
       document.getElementsByTagName("head")[0].appendChild(script);
     })();
   </script>

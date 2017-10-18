@@ -241,8 +241,11 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  /*color: #13DAEC;*/
-  color: #6595e6;
+  /*color: #13DAEC; original cyan*/
+  /*color: #6595e6; darker violet*/
+  /*color: #a7c2f1; light violet*/ 
+  /*color: #d3e1f8; super-light violet*/
+  color: #a7c2f1;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
@@ -280,7 +283,7 @@ body {
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
   /*border-color: #13DAEC;*/
-  border-color: #6595e6;
+  border-color: #a7c2f1;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
@@ -288,19 +291,19 @@ body {
  *********************************************/
 .reveal .controls .navigate-left,
 .reveal .controls .navigate-left.enabled {
-  border-right-color: #6595e6; }
+  border-right-color: #a7c2f1; }
 
 .reveal .controls .navigate-right,
 .reveal .controls .navigate-right.enabled {
-  border-left-color: #6595e6; }
+  border-left-color: #a7c2f1; }
 
 .reveal .controls .navigate-up,
 .reveal .controls .navigate-up.enabled {
-  border-bottom-color: #6595e6; }
+  border-bottom-color: #a7c2f1; }
 
 .reveal .controls .navigate-down,
 .reveal .controls .navigate-down.enabled {
-  border-top-color: #6595e6; }
+  border-top-color: #a7c2f1; }
 
 .reveal .controls .navigate-left.enabled:hover {
   /*border-right-color: #71e9f4; }*/
@@ -323,7 +326,7 @@ body {
 
 .reveal .progress span {
   /*background: #13DAEC;*/
-  background: #6595e6;
+  background: #a7c2f1;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }

@@ -20,6 +20,13 @@
   width:50%;
 }
 
+/* COLORS */
+.reveal .coloured {
+  /*color: #13DAEC; original cyan*/
+  /*color: #6595e6; darker violet*/
+  color:#a7c2f1;
+}
+
 /* FONTS */
 .texttt {
   font-family: monospace;
@@ -27,6 +34,18 @@
 .reveal .fa {
   font-family: 'FontAwesome';
   font-style: normal;
+}
+.reveal .h2-mod {
+  font-size: 2.11em; 
+  margin: 0 0 20px 0;
+  color: #eee;
+  font-family: monospace;
+  font-weight: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  word-wrap: break-word;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* ALERTS */
