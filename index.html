@@ -495,7 +495,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
 
 <section>
     <h1 class="title">Sparklyr: entorno para Big Data con R</h1>
-    <h3 class="date">19 Octubre, 2017</h3>
+    <h3 class="date">25 Octubre, 2018</h3>
 </section>
 
 <section id="diapositivas-50" class="slide level2">
@@ -611,7 +611,7 @@ sc &lt;-<span class="st"> </span><span class="kw">spark_connect</span>(<span cla
 <ul>
 <li><p>Desde la consola CESGA podemos acceder a dos sistemas de almacenamiento de ficheros:</p>
 <ul>
-<li><span style="color:#a7c2f1; font-family:monospace;"> $HOME</span>: Formato ‘glusterFS’ (paralelo, UNIX-like).</li>
+<li><span style="color:#a7c2f1; font-family:monospace;"> $HOME</span>: Formato ‘NFS’ (paralelo, UNIX-like).</li>
 <li><span style="color:#ffbf80; font-family:monospace;"> $HOME</span>: Formato ‘HDFS’.</li>
 </ul></li>
 <li><p>Driver: donde está instalado el programa que conecta con Spark, que traduce las funciones de <span style="color:#fffff;font-family:monospace;"> sparklyr</span>.</p></li>
@@ -644,7 +644,7 @@ sc &lt;-<span class="st"> </span><span class="kw">spark_connect</span>(<span cla
 <li><p>Reduce – <span style="color:#ffbf80; font-family:monospace;"> count() summarise()</span></p></li>
 <li><p>Collect – <span style="color:#ffbf80; font-family:monospace;"> collect()</span></p></li>
 </ul>
-<p><span style="color:#ffbf80; font-family:monospace;"> collect</span> desencadena la ejecución de todas las operaciones previas, y descarga los datos al <span style="color:#a7c2f1; font-family:monospace;"> $HOME</span> GlusterFS.</p>
+<p><span style="color:#ffbf80; font-family:monospace;"> collect</span> desencadena la ejecución de todas las operaciones previas, y descarga los datos al <span style="color:#a7c2f1; font-family:monospace;"> $HOME</span> NFS.</p>
 <blockquote>
 <p>Spark = ‘Lazy evaluation’.</p>
 </blockquote>
@@ -679,7 +679,7 @@ sc &lt;-<span class="st"> </span><span class="kw">spark_connect</span>(<span cla
 <h2>Y mucho más</h2>
 <ul>
 <li><p><span class="fa fa-github-alt" style="color:white;"></span> Github: <span style="color:#ffbf80"><a href="https://github.com/aurora-mareviv">github.com/aurora-mareviv</a></span></p></li>
-<li><p><span class="fa fa-code-fork" style="color:white;"></span> Tutorial sparklyr del CESGA: <a href="https://github.com/aurora-mareviv/sparklyr_test">/sparklyr_test</a></p></li>
+<li><p><span class="fa fa-code-fork" style="color:white;"></span> Tutorial sparklyr del CESGA: <a href="https://github.com/aurora-mareviv/sparklyr_start">/sparklyr_start</a></p></li>
 <li><p><span class="fa fa-globe" style="color:white;"></span> Web UI CESGA: <a href="http://hadoop.cesga.es/">hadoop.cesga.es</a></p></li>
 </ul>
 </section><section id="section-1" class="slide level2">
@@ -733,7 +733,8 @@ sc &lt;-<span class="st"> </span><span class="kw">spark_connect</span>(<span cla
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">spark-submit</span> --deploy-mode client sparklyr_script.R</code></pre></div>
 <p><br></p>
 <h3 id="clone-this-repo">Clone this repo</h3>
-<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">git</span> clone https://github.com/aurora-mareviv/sparklyr_test</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">git</span> clone https://github.com/aurora-mareviv/sparklyr_test
+<span class="fu">git</span> clone https://github.com/aurora-mareviv/sparklyr_start</code></pre></div>
 </section><section id="references" class="slide level2">
 <h2>References</h2>
 <ul>
