@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="author" content="" />
-  <title>Sparklyr: a Big Data API for R</title>
+  <title>Sparklyr: entorno para Big Data con R</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="index_files/reveal.js-3.3.0.1/css/reveal.css"/>
+  <link rel="stylesheet" href="index_es_files/reveal.js-3.3.0.1/css/reveal.css"/>
 
 
 <style type="text/css">
@@ -50,7 +50,7 @@ code > span.cv { color: #7f9f7f; font-weight: bold; } /* CommentVar */
 code > span.in { color: #7f9f7f; font-weight: bold; } /* Information */
 </style>
 
-<link rel="stylesheet" href="index_files/reveal.js-3.3.0.1/css/theme/league.css" id="theme">
+<link rel="stylesheet" href="index_es_files/reveal.js-3.3.0.1/css/theme/league.css" id="theme">
 
 
   <!-- some tweaks to reveal css -->
@@ -494,66 +494,65 @@ document.getElementsByTagName('head')[0].appendChild(style);
     <div class="slides">
 
 <section>
-    <h1 class="title">Sparklyr: a Big Data API for R</h1>
-    <h3 class="date">16 July, 2019</h3>
+    <h1 class="title">Sparklyr: entorno para Big Data con R</h1>
+    <h3 class="date">16 Julio, 2019</h3>
 </section>
 
-<section id="slides-100" class="slide level2">
-<h2>Slides  <span class="fa fa-cloud-download" style="color:white;"></span> 100%</h2>
+<section id="diapositivas-100" class="slide level2">
+<h2>Diapositivas  <span class="fa fa-cloud-download" style="color:white;"></span> 100%</h2>
 <p><span class="h2-mod"><a href="https://aurora-mareviv.github.io/sparklyr_test">i.gal/mFA0F</a></span></p>
 </section>
-<section><section id="background" class="titleslide slide level1"><h1>Background  <span class="fa fa-compass" style="color:white;"></span></h1></section><section id="what-is-sparklyr" class="slide level2">
-<h2>What is <a href="https://spark.rstudio.com/">sparklyr</a>?</h2>
+<section><section id="introduccion" class="titleslide slide level1"><h1>Introducción  <span class="fa fa-compass" style="color:white;"></span></h1></section><section id="que-es-sparklyr" class="slide level2">
+<h2>¿Qué es <a href="https://spark.rstudio.com/">sparklyr</a>?</h2>
 <ul>
-<li><p>Exposes the Spark API (written in Scala language) from R.</p></li>
-<li><p>Spark allows access to the Hadoop ecosystem.</p></li>
-<li><p>Simply, using <span style="color:#fffff;font-family:monospace;"> dplyr</span> syntax!.</p></li>
-<li><p>Created by the Rstudio team in 2016.</p></li>
+<li><p>Expone la API de Spark (en Scala) desde R.</p></li>
+<li><p>Spark permite acceder al ecosistema Hadoop.</p></li>
+<li><p>Simplemente, sintaxis <span style="color:#fffff;font-family:monospace;"> dplyr</span>!.</p></li>
+<li><p>Creado por Rstudio en 2016.</p></li>
 </ul>
 <div class="img-center">
 <p><img class="plain" style="width:185px;" src="./imaxes/dplyr.png"> <img class="plain" style="width:185px;" src="./imaxes/magrittr.png"> <img class="plain" style="width:185px;" src="./imaxes/sparklyr.png"></p>
 </div>
-</section><section id="what-is-big-data" class="slide level2">
-<h2>What is ‘<a href="https://wiki.apache.org/hadoop/">Big Data</a>’?</h2>
+</section><section id="que-es-big-data" class="slide level2">
+<h2>¿Qué es ‘<a href="https://wiki.apache.org/hadoop/">Big Data</a>’?</h2>
 <ul>
-<li><p>Reading and writing data at a <em>very big scale</em>!</p></li>
-<li><p>by:</p>
+<li><p>Lectura y escritura de datos a gran escala, por:</p>
 <ul>
-<li>Volume (Gb, Tb).</li>
-<li>Variety / Complexity.</li>
-<li>Velocity (streaming).</li>
+<li>Volumen (Gb, Tb).</li>
+<li>Variedad / Complejidad.</li>
+<li>Velocidad (streaming).</li>
 </ul></li>
 </ul>
 <div class="img-center">
 <p><img class="plain" style="width:500px;" src="./imaxes/hadoop.png"></p>
 </div>
-</section><section id="what-is-big-data-1" class="slide level2">
-<h2>What is ‘<a href="https://wiki.apache.org/hadoop/">Big Data</a>’?</h2>
+</section><section id="que-es-big-data-1" class="slide level2">
+<h2>¿Qué es ‘<a href="https://wiki.apache.org/hadoop/">Big Data</a>’?</h2>
 <div class="img-center">
 <p><img class="plain" style="width:900px;" src="./imaxes/bigdata2a.png"></p>
 </div>
-</section><section id="big-data-and-sparklyr" class="slide level2">
-<h2>Big Data and Sparklyr</h2>
+</section><section id="big-data-y-sparklyr" class="slide level2">
+<h2>Big Data y Sparklyr</h2>
 <div class="img-center">
 <p><img class="plain" style="width:600px;" src="./imaxes/sparklyrstack.png"></p>
 </div>
-</section><section id="how-is-data-proccessed-hdfs" class="slide level2">
-<h2>How is data proccessed?: <span style="color:#a7c2f1">HDFS</span></h2>
+</section><section id="como-se-procesa-hdfs" class="slide level2">
+<h2>¿Cómo se procesa?: <span style="color:#a7c2f1">HDFS</span></h2>
 <blockquote>
 <p>“hadoop distributed filesystem”</p>
 </blockquote>
 <ul>
-<li><p>Different to NTFS, FAT, Ext3…</p></li>
-<li><p>Optimized for files bigger than &gt;100 Mb.</p></li>
-<li><span style="color:#a7c2f1">r/w</span> format written in Java.
+<li><p>Distinto a NTFS, FAT, Ext3…</p></li>
+<li><p>Optimizado para ficheros de &gt;100 Mb.</p></li>
+<li>Formato de <span style="color:#a7c2f1">r/w</span>, escrito en Java.
 <ul>
-<li><em>Parallel</em> writing.<br />
+<li>Escritura <em>en paralelo</em>.<br />
 </li>
-<li><em>Parallel</em> <strong>and</strong> <em>sequential</em> reading.</li>
+<li>Lectura <em>en paralelo</em> <strong>y</strong> <em>secuencial</em>.</li>
 </ul></li>
 </ul>
 <blockquote>
-<p>“sequential file reading… but, how?”</p>
+<p>“lectura secuencial de archivos… pero, cómo?”</p>
 </blockquote>
 </section><section id="section" class="slide level2">
 <h2></h2>
@@ -566,37 +565,37 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <p>Resilient Distributed Database.</p>
 </blockquote>
 <ul>
-<li><p>Basic file format for HDFS.</p></li>
-<li><p>Composed by blocks, duplicated in several nodes.</p></li>
-<li><p>They are recoverable in case any node is lost.</p></li>
-<li><p>They form the basis of the <em>dataframes</em> that <span style="color:#fffff;font-family:monospace;"> sparklyr</span> will use.</p></li>
+<li><p>Formato de archivo básico para HDFS.</p></li>
+<li><p>Compuesto de bloques, duplicados en varios nodos.</p></li>
+<li><p>Se recuperan en caso de pérdida de algún nodo.</p></li>
+<li><p>Base de los <em>dataframes</em> utilizados por <span style="color:#fffff;font-family:monospace;"> sparklyr</span>.</p></li>
 </ul>
 <div class="img-center">
 <p><img class="plain" style="width:450px;" src="./imaxes/rdd2.png"></p>
 </div>
-</section><section id="hdfs-architecture" class="slide level2">
-<h2>HDFS Architecture</h2>
+</section><section id="arquitectura-hdfs" class="slide level2">
+<h2>Arquitectura HDFS</h2>
 <ul>
-<li><p>Blocks of 128 Mb.</p></li>
-<li><p>Replicated 3 times (by default) in different nodes.</p></li>
-<li><p><span style="color:#a7c2f1">NameNode</span> is the directory and metadata tree:</p>
+<li><p>Bloques de 128 Mb.</p></li>
+<li><p>Se replican por defecto 3 veces en distintos nodos.</p></li>
+<li><p><span style="color:#a7c2f1">NameNode</span> es el árbol de directorios y metadatos:</p>
 <ul>
-<li>Indexes and maps/locates blocks and files.</li>
+<li>Indexa y mapea/localiza bloques y archivos.</li>
 </ul></li>
 </ul>
 </section></section>
-<section><section id="how-does-spark-work" class="titleslide slide level1"><h1>How does Spark work?  <span class="fa fa-magic" style="color:white;"></span></h1></section><section id="how-does-spark-work-1" class="slide level2">
-<h2>How does Spark work?</h2>
+<section><section id="como-funciona-spark" class="titleslide slide level1"><h1>Cómo funciona Spark?  <span class="fa fa-magic" style="color:white;"></span></h1></section><section id="como-funciona-spark-1" class="slide level2">
+<h2>Cómo funciona Spark?</h2>
 <h3 id="compute-centric">Compute-centric</h3>
 <blockquote>
-<p>Data goes where the data-processing software is located (MSExcel).</p>
+<p>Los datos van a donde está el programa (MSExcel).</p>
 </blockquote>
 <h3 id="data-centric">Data-centric</h3>
 <blockquote>
-<p><span style="color:#ffbf80;"> Big-Data paradigm: data-processing programs go where data <em>is</em> located (Spark).</span></p>
+<p><span style="color:#ffbf80;"> El paradigma del Big Data: el programa va a donde se hallan los datos (Spark).</span></p>
 </blockquote>
-</section><section id="how-does-spark-work-2" class="slide level2">
-<h2>How does Spark work?</h2>
+</section><section id="como-funciona-spark-2" class="slide level2">
+<h2>Cómo funciona Spark?</h2>
 <div class="img-center">
 <p><img class="plain" style="width:150px;" src="./imaxes/pc.png"> <img  style="width:700px;" src="./imaxes/spark-comp.png"></p>
 </div>
@@ -607,33 +606,33 @@ sc &lt;-<span class="st"> </span><span class="kw">spark_connect</span>(<span cla
 <span class="co"># Spark context: yarn (for loading bigger datasets)</span>
 sc &lt;-<span class="st"> </span><span class="kw">spark_connect</span>(<span class="dt">master =</span> <span class="st">&quot;yarn-client&quot;</span>, 
                     <span class="dt">spark_home =</span> <span class="st">&quot;/usr/hdp/2.4.2.0-258/spark&quot;</span>)</code></pre></div>
-</section><section id="how-does-spark-work-3" class="slide level2">
-<h2>How does Spark work?</h2>
+</section><section id="como-funciona-spark-3" class="slide level2">
+<h2>Cómo funciona Spark?</h2>
 <ul>
-<li><p>From the CESGA console we can access two different filesystems: <!--acceder a dos sistemas de almacenamiento de ficheros: --></p>
+<li><p>Desde la consola CESGA podemos acceder a dos sistemas de almacenamiento de ficheros:</p>
 <ul>
-<li><span style="color:#a7c2f1; font-family:monospace;"> $HOME</span>: NFS Remote filesystem (UNIX-like).</li>
-<li><span style="color:#ffbf80; font-family:monospace;"> $HOME</span>: Parallel, remote filesystem, designed for MapReduce applications: HDFS.</li>
+<li><span style="color:#a7c2f1; font-family:monospace;"> $HOME</span>: Sistema de ficheros remoto NFS (UNIX-like).</li>
+<li><span style="color:#ffbf80; font-family:monospace;"> $HOME</span>: Sistema de ficheros remoto paralelo diseñado para aplicaciones MapReduce: HDFS.</li>
 </ul></li>
-<li><p>Driver: there resides the program that connects with Spark. Translates <span style="color:#fffff;font-family:monospace;"> sparklyr</span> into Spark.</p></li>
-<li><p>Master: launches the operations (local, client, cluster).</p></li>
-<li><p>YARN manages the resources asked for by Spark.</p></li>
-<li><p>Executors implement file operations.</p></li>
+<li><p>Driver: donde está instalado el programa que conecta con Spark, que traduce las funciones de <span style="color:#fffff;font-family:monospace;"> sparklyr</span>.</p></li>
+<li><p>Master: lanza las operaciones (local, client, cluster).</p></li>
+<li><p>YARN maneja los recursos que pide Spark.</p></li>
+<li><p>Los Executors realizan las operaciones con los archivos.</p></li>
 </ul>
 </section></section>
-<section><section id="file-operations-in-spark" class="titleslide slide level1"><h1>File operations in Spark  <span class="fa fa-cogs" style="color:white;"></span></h1></section><section id="map-reduce" class="slide level2" data-transition="fade-out">
+<section><section id="operaciones-con-datos-en-spark" class="titleslide slide level1"><h1>Operaciones con datos en Spark  <span class="fa fa-cogs" style="color:white;"></span></h1></section><section id="map-reduce" class="slide level2" data-transition="fade-out">
 <h2>Map-Reduce</h2>
 <ul>
-<li><p>Concept introduced by Google in <a href="https://research.google.com/archive/mapreduce.html">2004</a>.</p></li>
-<li><p>Implemented in Apache-Hadoop.</p></li>
+<li><p>Concepto introducido por Google en <a href="https://research.google.com/archive/mapreduce.html">2004</a>.</p></li>
+<li><p>Puesto en práctica con Apache-Hadoop.</p></li>
 <li><p><span style="color:#a7c2f1">Map</span></p></li>
 <li><p><span style="color:#a7c2f1">Reduce</span></p></li>
 </ul>
 </section><section id="map-reduce-1" class="slide level2" data-transition="fade-in slide-out">
 <h2>Map-Reduce</h2>
 <ul>
-<li><p>Concept introduced by Google in <a href="https://research.google.com/archive/mapreduce.html">2004</a>.</p></li>
-<li><p>Implemented in Apache-Hadoop.</p></li>
+<li><p>Concepto introducido por Google en <a href="https://research.google.com/archive/mapreduce.html">2004</a>.</p></li>
+<li><p>Puesto en práctica con Apache-Hadoop.</p></li>
 <li><p><span style="color:#ffbf80; font-family:monospace;"> apply()</span></p></li>
 <li><p><span style="color:#ffbf80; font-family:monospace;"> summarise()</span></p></li>
 </ul>
@@ -645,39 +644,39 @@ sc &lt;-<span class="st"> </span><span class="kw">spark_connect</span>(<span cla
 <li><p>Reduce – <span style="color:#ffbf80; font-family:monospace;"> count() summarise()</span></p></li>
 <li><p>Collect – <span style="color:#ffbf80; font-family:monospace;"> collect()</span></p></li>
 </ul>
-<p><span style="color:#ffbf80; font-family:monospace;"> collect</span> triggers the execution of all the previously declared operations, and downloads resulting data to <span style="color:#a7c2f1; font-family:monospace;"> $HOME</span> NFS.</p>
+<p><span style="color:#ffbf80; font-family:monospace;"> collect</span> desencadena la ejecución de todas las operaciones previas, y descarga los datos al <span style="color:#a7c2f1; font-family:monospace;"> $HOME</span> NFS.</p>
 <blockquote>
 <p>Spark = ‘Lazy evaluation’.</p>
 </blockquote>
 </section><section id="ejemplos" class="slide level2">
 <h2>Ejemplos</h2>
-<p>Municipality data</p>
+<p>Datos municipales</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">compostela <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">filter</span>(area_services <span class="op">&gt;</span><span class="st"> </span>area_built <span class="op">*</span><span class="st"> </span><span class="fl">0.5</span>) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">filter</span>(superficie_servicios <span class="op">&gt;</span><span class="st"> </span>superficie_construida <span class="op">*</span><span class="st"> </span><span class="fl">0.5</span>) <span class="op">%&gt;%</span><span class="st"> </span>
 <span class="st">  </span>
 <span class="st">  </span><span class="kw">head</span>(<span class="dv">6</span>) <span class="op">%&gt;%</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">collect</span>()</code></pre></div>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">compostela <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">group_by</span>(district, boulevard) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">max_num_habitants   =</span> <span class="kw">max</span>(num_habitants),
-            <span class="dt">mean_num_estates  =</span> <span class="kw">mean</span>(num_estates),
-            <span class="dt">total_num_houses  =</span> <span class="kw">sum</span>(num_houses)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">group_by</span>(distrito, barrio) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">max_num_habitantes   =</span> <span class="kw">max</span>(num_habitantes),
+            <span class="dt">media_num_parcelas  =</span> <span class="kw">mean</span>(num_parcelas),
+            <span class="dt">total_num_viviendas  =</span> <span class="kw">sum</span>(num_viviendas)) <span class="op">%&gt;%</span><span class="st"> </span>
 <span class="st">  </span>
 <span class="st">  </span><span class="kw">head</span>(<span class="dv">4</span>) <span class="op">%&gt;%</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">collect</span>()</code></pre></div>
 </section><section id="ejemplos-1" class="slide level2">
 <h2>Ejemplos</h2>
-<p>Book reviews in Amazon</p>
+<p>Opiniones de libros en Amazon</p>
 <div class="img-center">
 <p><img  style="width:550px;" src="./imaxes/mapreduceRamazon.jpg"></p>
 </div>
-</section><section id="machine-learning-and-regression-models" class="slide level2">
-<h2>Machine-learning and Regression models</h2>
+</section><section id="modelos-de-regresion-y-machine-learning" class="slide level2">
+<h2>Modelos de regresión y ‘machine-learning’</h2>
 <div class="img-center">
 <p><img  style="width:750px;" src="./imaxes/sparkstack.png"></p>
 </div>
-</section><section id="and-much-more" class="slide level2">
-<h2>And much more</h2>
+</section><section id="y-mucho-mas" class="slide level2">
+<h2>Y mucho más</h2>
 <ul>
 <li><p><span class="fa fa-github-alt" style="color:white;"></span> Github: <span style="color:#ffbf80"><a href="https://github.com/aurora-mareviv">github.com/aurora-mareviv</a></span></p></li>
 <li><p><span class="fa fa-code-fork" style="color:white;"></span> Tutorial sparklyr del CESGA: <a href="https://github.com/aurora-mareviv/sparklyr_start">/sparklyr_start</a></p></li>
@@ -762,8 +761,8 @@ sc &lt;-<span class="st"> </span><span class="kw">spark_connect</span>(<span cla
     </div>
   </div>
 
-  <script src="index_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
-  <script src="index_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+  <script src="index_es_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="index_es_files/reveal.js-3.3.0.1/js/reveal.js"></script>
 
   <script>
 
@@ -789,7 +788,7 @@ sc &lt;-<span class="st"> </span><span class="kw">spark_connect</span>(<span cla
 
         // Optional reveal.js plugins
         dependencies: [
-          { src: 'index_files/reveal.js-3.3.0.1/plugin/notes/notes.js', async: true },
+          { src: 'index_es_files/reveal.js-3.3.0.1/plugin/notes/notes.js', async: true },
         ]
       });
     </script>
