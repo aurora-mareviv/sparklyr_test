@@ -1,4 +1,6 @@
-# sparklyr_test
+sparklyr_test <img src="./imaxes/sparklyr_pipeline.png" align="right" width="200px" />
+===============================================================================
+
 Testing the `sparklyr` package for data wrangling &amp; basic modelling.
 
 [https://aurora-mareviv.github.io/sparklyr_test](https://aurora-mareviv.github.io/sparklyr_test)
