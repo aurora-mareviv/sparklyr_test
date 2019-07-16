@@ -637,8 +637,8 @@ sc &lt;-<span class="st"> </span><span class="kw">spark_connect</span>(<span cla
 <li><p><span style="color:#ffbf80; font-family:monospace;"> apply()</span></p></li>
 <li><p><span style="color:#ffbf80; font-family:monospace;"> summarise()</span></p></li>
 </ul>
-</section><section id="operaciones-mas-importantes" class="slide level2">
-<h2>Operaciones más importantes</h2>
+</section><section id="relevant-operations" class="slide level2">
+<h2>Relevant Operations</h2>
 <ul>
 <li><p>Map – <span style="color:#ffbf80; font-family:monospace;"> apply()</span></p></li>
 <li><p>Filter – <span style="color:#ffbf80; font-family:monospace;"> filter() group_by()</span></p></li>
@@ -649,8 +649,8 @@ sc &lt;-<span class="st"> </span><span class="kw">spark_connect</span>(<span cla
 <blockquote>
 <p>Spark = ‘Lazy evaluation’.</p>
 </blockquote>
-</section><section id="ejemplos" class="slide level2">
-<h2>Ejemplos</h2>
+</section><section id="examples" class="slide level2">
+<h2>Examples</h2>
 <p>Municipality data</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">compostela <span class="op">%&gt;%</span>
 <span class="st">  </span><span class="kw">filter</span>(area_services <span class="op">&gt;</span><span class="st"> </span>area_built <span class="op">*</span><span class="st"> </span><span class="fl">0.5</span>) <span class="op">%&gt;%</span><span class="st"> </span>
@@ -665,8 +665,8 @@ sc &lt;-<span class="st"> </span><span class="kw">spark_connect</span>(<span cla
 <span class="st">  </span>
 <span class="st">  </span><span class="kw">head</span>(<span class="dv">4</span>) <span class="op">%&gt;%</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">collect</span>()</code></pre></div>
-</section><section id="ejemplos-1" class="slide level2">
-<h2>Ejemplos</h2>
+</section><section id="examples-1" class="slide level2">
+<h2>Examples</h2>
 <p>Book reviews in Amazon</p>
 <div class="img-center">
 <p><img  style="width:550px;" src="./imaxes/mapreduceRamazon.jpg"></p>
